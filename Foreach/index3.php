@@ -39,7 +39,16 @@ $videotheque = array(
 
 echo '12.Mes films : <br>';
 //ajoutez votre code ici
-
+foreach ($videotheque as $film) {
+    echo "Nom: " . $film['nom'] . "<br>";
+    echo "Date: " . $film['date'] . "<br>";
+    echo "Réalisateur: " . $film['realisateur'] . "<br>";
+    echo "Acteurs: ";
+    foreach ($film['acteurs'] as $acteur) {
+        echo "$acteur, ";
+    }
+    echo "<br><br>";
+}
 
 //----------------------------------------
 //Afficher toutes les informations de la vidéothèque

@@ -73,8 +73,15 @@ echo "<br><br>";
 //----------------------------------------
 //Créer un tableau pour les mois de l'année et afficher tous les mois de Janvier à Décembre;
 //Modifier et/ou remplacer les éléments ci-dessous
-
 echo "8.Les mois depuis le début de l'année : <br>";
+
+$month = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre",
+    "decembre"];
+
+foreach ($month as $item) {
+    echo $item ."<br>";
+}
+
 
 
 
@@ -82,5 +89,8 @@ echo "8.Les mois depuis le début de l'année : <br>";
 //Modifier et/ou remplacer les éléments ci-dessous
 
 echo "9.Les mois depuis la fin de l'année : <br>";
-
+$num = count($month);
+for ($i = $num - 1; $i >= 0; --$i) {
+    echo $month[$i] . "<br>";
+}
 

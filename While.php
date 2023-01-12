@@ -33,4 +33,8 @@ echo "Je dors enfin...<br><br>";
 
 
 // TODO Votre code ici !
-
+$vaches = 0;
+while ($vaches < 25) {
+    $vaches++;
+    echo "Vache numéro $vaches <br>";
+}
